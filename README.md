@@ -6,7 +6,7 @@
 **A Python package demo for geospatial analysis**
 
 -   Free software: MIT License
--   Documentation: https://giswqs.github.io/geohey
+-   Documentation: https://geohey.xyz
 
 ## Features
 
