@@ -22038,7 +22038,7 @@ works.  See paragraph 1.E below.
 1.C.  The Project Gutenberg Literary Archive Foundation (“the
 Foundation” or PGLAF), owns a compilation copyright in the collection
 of Project Gutenberg-tm electronic works.  Nearly all the individual
-works in the collection are in the public domain in the United States. 
+works in the collection are in the public domain in the United States.
 If an individual work is in the public domain in the United States and
 you are located in the United States, we do not claim a right to
 prevent you from copying, distributing, performing, displaying or
