@@ -1,7 +1,7 @@
 site_name: geohey
 site_description: A Python package demo for geospatial analysis
 site_author: giswqs
-site_url: https://geohey.xyz
+site_url: https://geohey.gishub.org
 repo_url: https://github.com/giswqs/geohey
 
 copyright: "Copyright &copy; 2024 - 2024 Qiusheng Wu"
