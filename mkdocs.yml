@@ -99,3 +99,4 @@ nav:
           - python/10_files_and_exceptions.ipynb
     - Labs:
           - labs/lab4.ipynb
+          - labs/lab5.ipynb
