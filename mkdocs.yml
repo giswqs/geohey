@@ -82,10 +82,12 @@ nav:
     - API Reference:
           - geohey module: geohey.md
           - common module: common.md
+          - utils module: utils.md
     - Examples:
           - examples/intro.ipynb
           - examples/random.ipynb
           - examples/demo.ipynb
+          - examples/csv.ipynb
     - Python Basics:
           - python/01_getting_started.ipynb
           - python/02_variables_data_types.ipynb
