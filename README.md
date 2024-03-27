@@ -13,3 +13,4 @@
 -   Visualizing raster and vector data
 -   Analyzing raster and vector data
 -   Visualizing raster data
+-   Analyzing raster data
