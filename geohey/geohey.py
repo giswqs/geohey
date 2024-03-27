@@ -96,3 +96,35 @@ class Map(ipyleaflet.Map):
                 data = shp.__geo_interface__
 
         self.add_geojson(data, name, **kwargs)
+
+    def add_raster(self, data, name="raster", **kwargs):
+        """
+        Adds a raster to the current map.
+
+        Args:
+            data (str or dict): The path to the raster as a string, or a dictionary representing the raster.
+            name (str, optional): The name of the layer. Defaults to "raster".
+            **kwargs: Arbitrary keyword arguments.
+
+        Raises:
+            TypeError: If the data is neither a string nor a dictionary representing a raster.
+
+        Returns:
+            None
+        """
+        import rasterio
+        import numpy as np
+
+        if isinstance(data, str):
+            with rasterio.open(data) as src:
+                data = src.read(1)
+                data = np.ma.masked_equal(data, src.nodata)
+                data = data.filled(0)
+
+        if "colormap" not in kwargs:
+            kwargs["colormap"] = ipyleaflet.LinearColormap(
+                colors=["red", "blue", "green"], vmin=0, vmax=255
+            )
+
+        layer = ipyleaflet.ImageOverlay(url=data, name=name, **kwargs)
+        self.add(layer)
