@@ -12,4 +12,4 @@
 
 -   Visualizing raster and vector data
 -   Analyzing raster and vector data
--   Print out useful message
+-   Visualizing raster data
