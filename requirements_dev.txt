@@ -8,6 +8,7 @@ flake8
 
 ipykernel
 livereload
+localtileserver
 mkdocs
 mkdocs-git-revision-date-localized-plugin
 mkdocs-git-revision-date-plugin

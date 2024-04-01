@@ -50,7 +50,13 @@ plugins:
           execute: True
           allow_errors: false
           ignore: ["conf.py"]
-          execute_ignore: ["labs/lab5.ipynb", "labs/lab4.ipynb", "vector.ipynb"]
+          execute_ignore:
+              [
+                  "labs/lab5.ipynb",
+                  "labs/lab4.ipynb",
+                  "vector.ipynb",
+                  "raster.ipynb",
+              ]
 
 markdown_extensions:
     - admonition
@@ -89,6 +95,7 @@ nav:
           - examples/demo.ipynb
           - examples/csv.ipynb
           - examples/ipywidgets.ipynb
+          - examples/raster.ipynb
     - Python Basics:
           - python/01_getting_started.ipynb
           - python/02_variables_data_types.ipynb
