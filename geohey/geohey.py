@@ -2,6 +2,7 @@
 
 import ipyleaflet
 from ipyleaflet import basemaps
+import ipywidgets as widgets
 
 
 class Map(ipyleaflet.Map):
@@ -49,6 +50,7 @@ class Map(ipyleaflet.Map):
         Returns:
             None
         """
+
         if isinstance(name, str):
             url = eval(f"basemaps.{name}").build_url()
             self.add_tile_layer(url, name)
@@ -140,3 +142,29 @@ class Map(ipyleaflet.Map):
         if zoom_to_layer:
             self.center = client.center()
             self.zoom = client.default_zoom
+
+    def add_zoom_slider(
+        self, description="Zoom level", min=0, max=24, value=10, position="topright"
+    ):
+        """Adds a zoom slider to the map.
+
+        Args:
+            position (str, optional): The position of the zoom slider. Defaults to "topright".
+        """
+        zoom_slider = widgets.IntSlider(
+            description=description, min=min, max=max, value=value
+        )
+
+        control = ipyleaflet.WidgetControl(widget=zoom_slider, position=position)
+        self.add(control)
+        widgets.jslink((zoom_slider, "value"), (self, "zoom"))
+
+    def add_widget(self, widget, position="topright"):
+        """Adds a widget to the map.
+
+        Args:
+            widget (object): The widget to be added.
+            position (str, optional): The position of the widget. Defaults to "topright".
+        """
+        control = ipyleaflet.WidgetControl(widget=widget, position=position)
+        self.add(control)
