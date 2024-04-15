@@ -9,7 +9,10 @@
 
 ## Features
 
--   Generate random numbers
+-   Create interactive maps
+-   Visualize geospatial data
+-   Visualize raster data
+-   Visualize vector data
 
 ## Demos
 

@@ -96,6 +96,7 @@ nav:
           - examples/csv.ipynb
           - examples/ipywidgets.ipynb
           - examples/raster.ipynb
+          - examples/vector.ipynb
           - examples/toolbar.ipynb
     - Python Basics:
           - python/01_getting_started.ipynb
