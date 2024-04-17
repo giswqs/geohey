@@ -1,3 +1,5 @@
+folium
 ipyleaflet
+localtileserver
 numpy
 pandas
