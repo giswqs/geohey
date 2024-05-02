@@ -99,6 +99,7 @@ nav:
           - examples/vector.ipynb
           - examples/toolbar.ipynb
           - examples/folium.ipynb
+          - examples/split_map.ipynb
 
     - Python Basics:
           - python/01_getting_started.ipynb

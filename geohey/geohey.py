@@ -1,7 +1,7 @@
 """Main module."""
 
 import ipyleaflet
-from ipyleaflet import basemaps, WidgetControl
+from ipyleaflet import basemaps, WidgetControl, SplitMapControl
 import ipywidgets as widgets
 
 
@@ -304,3 +304,17 @@ class Map(ipyleaflet.Map):
 
         for tool in grid.children:
             tool.on_click(toolbar_callback)
+
+    def add_split_map(self, left_layer, right_layer, **kwargs):
+        """Adds a split map to the current map.
+
+        Args:
+            left_layer (object): The left layer of the split map.
+            right_layer (object): The right layer of the split map.
+        """
+
+        control = SplitMapControl(
+            left_layer=left_layer,
+            right_layer=right_layer,
+        )
+        self.add(control)
