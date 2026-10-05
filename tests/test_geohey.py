@@ -2,7 +2,6 @@
 
 """Tests for `geohey` package."""
 
-
 import unittest
 
 from geohey import geohey
