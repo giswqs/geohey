@@ -1,5 +1,4 @@
-"""This is the utils module that contains utility functions for the geohey package.
-"""
+"""This is the utils module that contains utility functions for the geohey package."""
 
 
 def csv_to_df(csv_file):
